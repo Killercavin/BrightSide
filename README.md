@@ -1,1 +1,1 @@
-# BrightSide
+# BrightSide-Stores
