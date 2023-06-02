@@ -7,7 +7,6 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: #f9f9f9;
     overflow-x: hidden;
 }
 
@@ -31,7 +30,7 @@ body{
 }
 
 .navBar .logo{
-    width: 125px;
+    width: 145px;
     cursor: pointer;
     margin-top: 0.5%;
     margin-left: 2.5px;
@@ -97,14 +96,26 @@ ul li a:hover{
 
 .btn{
     background: darkgreen;
+    margin: 25px;
     padding: 5px;
-    margin: 2.5px;
-    border-radius: 5px 5px;
+    cursor: pointer;
     color: white;
-    border-color: #00563F;
-    mask-type: inherit;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-style: none;
+    border-radius: 5px;
 }
 
+.btn p{
+    font-size: large;
+}
+
+.btn:hover{
+    background: maroon;
+    transition: .25s;
+}
+
+/* Footer */
 footer{
     display: flex;
     justify-content: center;
