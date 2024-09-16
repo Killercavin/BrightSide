@@ -11,7 +11,11 @@ const SetupPage = () => {
             onOpen();
         }
     }, [isOpen, onOpen]);
-}
+
+    return (
+       null
+    );
+};
 
 
 export default SetupPage;

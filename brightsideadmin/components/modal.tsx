@@ -6,22 +6,21 @@ interface ModalProps {
     description: string,
     isOpen: boolean,
     onClose: () => void,
-    children? : React.ReactNode,
+    children?: React.ReactNode,
 }
 
-export const Modal = ({title, description, isOpen, onClose, children}: ModalProps) => {
+export const Modal = ({ title, description, isOpen, onClose, children }: ModalProps) => {
     return (
-        <Dialog open={isOpen}>
+        <Dialog open={isOpen} onOpenChange={(open) => { if (!open) onClose(); }}>
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle>{title}</DialogTitle>
                 </DialogHeader>
                 <DialogDescription>{description}</DialogDescription>
-                
+                <div>
+                    {children}
+                </div>
             </DialogContent>
-            <div>
-                {children}
-            </div>
         </Dialog>
     );
 }
